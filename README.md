@@ -1,24 +1,8 @@
 # calcuate-average
-# filepath: average-grades-calculator/src/calculate_average.py
+# AVERAGE GRADES CALCULATOR_MADE WITH Phyton
 # Calcola la media delle votazioni scolastiche
 def main():
-    grades = []
-    while True:
-        try:
-            grade_input = input("Inserisci un voto (o 'fine' per terminare): ")
-        except (EOFError, KeyboardInterrupt):
-            print("\nInterruzione rilevata. Uscita dal programma.")
-            return
-            if grade_input.lower() == 'fine':  # Exit condition for the loop
-                break
-        try:
-            grade = float(grade_input)
-            if 0 <= grade <= 10:  # Assuming grades are between 0 and 10
-                grades.append(grade)
-            else:
-                print("Per favore, inserisci un voto valido tra 0 e 10.")
-        except ValueError:
-            print("Input non valido. Per favore, inserisci un numero.")
+I made this calculator to try to use Phyton
 
     if grades:
         total_sum = sum(grades)
@@ -35,5 +19,3 @@ def main():
     else:
         print("Nessun voto inserito.")
 
-if __name__ == "__main__":
-    main()
